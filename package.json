@@ -4,7 +4,6 @@
   "description": "Api for Zaiko Project",
   "main": "index.js",
   "scripts": {
-    // "add-build": "git add dist",
     "build": "rimraf dist && tsc",
     "dev": "ts-node-dev ./src/index.ts",
     "lint": "eslint . --ext .ts",
@@ -13,8 +12,7 @@
     "tsc": "tsc",
     "pre-commit": [
       "ts.check",
-      "build",
-      // "add-build"
+      "build"
     ]
   },
   "keywords": [],
