@@ -15,6 +15,7 @@ app.get("/", (_req, res) => {
     res.send(message)
 })
 
+routerApi(app)
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
