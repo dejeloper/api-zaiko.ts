@@ -10,8 +10,7 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (_req, res) => {
-  console.log("Hola");
-  const message = "Hola mundo";
+  const message = "Api Rest with TypeScript and Express - Api Zaiko";
   res.send(message);
 });
 
