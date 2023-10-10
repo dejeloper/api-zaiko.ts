@@ -1,7 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import routerApi from "./api";
+import routerApi from "./src/api";
 
 const app = express();
 app.use(express.json());
