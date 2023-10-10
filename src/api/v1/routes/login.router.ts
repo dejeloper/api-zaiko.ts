@@ -1,8 +1,10 @@
 import express from "express";
-import { loginGet } from "../controllers/login.controllers";
+import LoginController from "../controllers/login.controllers";
+
+const loginController = new LoginController();
 
 const loginRouter = express.Router();
 
-loginRouter.get("/", loginGet);
+loginRouter.get("/", loginController.loginGet);
 
 export default loginRouter;
